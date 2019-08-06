@@ -1,0 +1,98 @@
+body
+    +light
+    color: $textColor
+
+* 
+    box-sizing: border-box
+    outline: none
+
+a, button
+    &:hover
+        cursor: pointer
+
+
+img
+    max-width: 100%
+
+.input
+    height: 80px
+    padding-left: 30px
+
+.select
+    border: 1px solid #dddddd
+    border-right: 0
+    position: relative
+    width: 100%
+    height: 80px
+    padding-left: 10px
+    font-size: 20px
+    appearance: none
+    background: url("../img/offer/next.png") no-repeat
+    background-position: 90%
+    margin-right: 0
+
+    &::-ms-expand 
+        display: none
+
+    
+
+.bg-secondary
+    background: $bgSecondary
+
+.button-o
+    display: block
+    text-transform: uppercase
+    padding: 17px 22px
+    border: 2px solid $primary
+    color: $primary
+    background: transparent
+    +bold
+
+.button
+    font-size: 15px
+    padding: 25px 45px
+    border: none
+    background: $primary
+    text-transform: uppercase
+    color: white
+    +bold
+
+
+.checkbox[type="checkbox"]
+    display: none
+
+    &:hover
+        cursor: pointer
+
+    &:checked + .checkbox-label::before
+            background-color: $primary
+
+.checkbox-label
+    display: flex
+    align-items: center
+    &:hover
+        cursor: pointer
+    &:before
+        content: ''
+        width: 30px
+        height: 30px
+        border: 1px solid #dddddd
+        margin-right: 15px
+
+
+.section
+    padding: 100px 0px
+    &-title
+        text-transform: uppercase
+        text-align: center
+        font-size: 30px
+        +bold
+
+    &__title
+        margin-bottom: 100px
+
+.light_bg
+    background-color: #fff
+
+.pt_none
+    padding-top: 0

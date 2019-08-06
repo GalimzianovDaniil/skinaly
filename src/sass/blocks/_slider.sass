@@ -1,0 +1,48 @@
+.before-slider
+    margin: auto
+    position: relative
+    max-width: 87%
+    margin: auto
+
+    
+.arrow
+    position: absolute
+    background: none
+    border: none
+    
+
+    &-right
+        top: 50%
+        transform: translateY(-50%)
+        right: -10%
+
+    &-left
+        top: 50%
+        transform: translateY(-50%)
+        left: -10%
+
+.slick-dots
+    display: flex
+    justify-content: center
+    margin-top: 20px
+    max-width: 80px
+    margin: auto
+    margin-top: 40px
+    justify-content: space-between
+
+    button
+        background-color: #d1d1d1
+        height: 20px
+        width: 20px
+        border-radius: 100%
+        border: none
+        color: #d1d1d1
+        &:hover
+            cursor: pointer
+        
+    
+    li.slick-active
+        
+        button
+            background-color: #5b7fda
+            color: #5b7fda

@@ -1,0 +1,54 @@
+.normal_width
+
+    
+.reviews
+    padding-bottom: 200px
+
+    &-slider
+        position: relative
+        margin: auto
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        max-width: 87%
+
+        &__item
+            text-align: center
+            // max-width: 370px
+            padding: 0 20px
+
+        &__text
+            position: relative
+            font-size: 15px
+            font-style: italic
+            background-color: white
+            padding: 30px 20px
+            min-height: 144px
+            margin-bottom: 20px
+            border-radius: 10px
+            +light
+            &:after
+                content: ''
+                position: absolute
+                bottom: -28px
+                left: 50%
+                transform: translateX(-50%)
+
+                border: 20px solid transparent
+                border-top: 20px solid white
+
+        &__img
+            display: block
+            margin: auto
+            border: 2px solid $primary
+            border-radius: 100%
+            margin-bottom: 20px
+
+        &__name
+            display: block
+            margin: auto
+            font-size: 14px
+            max-width: 129px
+            +bold
+
+

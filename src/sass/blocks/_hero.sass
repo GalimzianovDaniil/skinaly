@@ -1,0 +1,26 @@
+.hero
+    background-color: #f1f1f1
+    background: url('../img/hero/hero-bg.png') no-repeat center top
+    margin-top: 80px
+    padding-top: 120px
+    padding-bottom: 270px
+
+    &__title
+        font-size: 30px
+        margin-bottom: 40px
+
+    &__sub-title
+        display: block
+        +bold
+        font-size: 30px
+        margin-bottom: 60px
+
+@media (max-width: 991px)
+    .hero
+        background-size: cover
+        background-position: top left 36%
+
+@media (max-width: 641px)
+    .hero
+        background-size: contain
+        background-position: top left

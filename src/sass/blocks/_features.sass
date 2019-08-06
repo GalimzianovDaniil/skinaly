@@ -1,0 +1,36 @@
+.features
+    background-color: #fff
+    
+    &-block
+        display: flex
+        flex-wrap: wrap
+
+        &__item
+            text-align: center
+            flex-basis: 33.33%
+            margin-bottom: 100px
+
+        &__image
+            margin-bottom: 34px
+
+        &__text
+            font-size: 20px
+            line-height: 25px
+
+@media (max-width: 1169px)
+    .features
+        &-block
+            &__item
+                flex-basis: 50%
+
+@media (max-width: 768px)
+    .features
+        &-block
+            &__item
+                flex-basis: 100%
+                margin-bottom: 50px
+
+    .section
+        &-title
+            font-size: 25px
+            margin-bottom: 70px

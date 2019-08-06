@@ -1,0 +1,147 @@
+
+    
+.offer
+
+    &__block
+        padding: 80px
+        
+
+.offer-block
+    position: relative
+    margin-top: -200px
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1) 
+    background: url('../img/offer/form-bg.png') no-repeat right
+    background-color: white
+    background-size: contain
+
+    &__conf
+        margin-left: 45px
+        font-size: 17px
+        max-width: 352px
+
+    &__title
+        font-size: 25px
+        text-transform: uppercase
+        margin-bottom: 20px
+        +bold
+
+    &__sub-title
+        display: block
+        font-size: 21px
+        margin-bottom: 48px
+        max-width: 830px
+        color: black
+
+.form
+
+    &__row
+        display: flex
+        align-items: center
+        max-width: 900px
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0
+
+    &__row-checkbox
+            display: flex
+            margin-bottom: 25px
+            flex-wrap: wrap
+            align-items: center
+
+    &__label
+        display: block
+        margin-bottom: 15px
+
+    &__checkbox-label
+        margin-right: 42px
+        font-size: 17px
+        
+    &__group
+        flex-basis: 33.3%
+
+        &:last-child
+            .form__input
+                border-right: 1px solid #dddddd
+
+    &__input
+        width: 100%
+        border: 1px solid #dddddd
+        border-right: 0
+
+    &__button
+        height: 80px
+        width: 100%
+
+.another_bg
+    background: url('../img/offer/form-bg2.png') no-repeat right
+    background-size: contain
+    background-color: #fff
+
+
+
+       
+@media (max-width: 1190px)
+    .offer
+        &-block
+            background-position: center right -120px
+            &__sub-title
+                max-width: 700px
+
+@media (max-width: 991px)
+    .offer
+        &-block
+            background: none
+            background: white
+            
+
+@media (max-width: 768px)
+
+    .offer-block__conf
+        width: 100%
+        margin-left: 0px
+        font-size: 17px
+        text-align: center
+        margin-top: 20px
+
+    .form
+
+        &__row
+            flex-direction: column
+
+        &__group
+            width: 100%
+            margin-top: 20px
+            &:first-child
+                margin-top: 0
+
+        &__input
+            border: 1px solid #dddddd
+
+        &__input
+            // margin-bottom: 0px
+
+@media (max-width: 510px)
+    .offer
+        &-block
+            padding: 40px
+
+            &__title
+                font-size: 20px
+
+            &__sub-title
+                font-size: 18px
+
+    .form
+        &__checkbox:last-child
+            margin-top: 15px
+
+@media (max-width: 380px)
+    .offer
+        &-block
+            padding: 20px
+
+@media (max-width: 991px)
+    .offer-block__conf
+        width: 100%
+        margin-left: 5px
+        font-size: 17px
